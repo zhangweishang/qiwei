@@ -12,7 +12,27 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    
+    // var that = this;
+    // wx.getSetting({
+    //   success: function (res) {
+    //     if (res.authSetting['scope.userInfo']) {
+    //       wx.getUserInfo({
+    //         success: function (res) {
+    //           //从数据库获取用户信息
+    //           that.queryUserInfo();
+    //           wx.switchTab({
+    //             url: '/pages/index/index',
+    //           })
+    //         }
+    //       });
+    //     } else {
+    //       // 未授权，跳转到授权页面
+    //       wx.reLaunch({
+    //         url: '/pages/login/login',
+    //       });
+    //     }
+    //   }
+    // })
   },
 
   /**
