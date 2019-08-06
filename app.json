@@ -1,12 +1,9 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/logs/logs",
-    "pages/list/list",
-    "pages/order/balance/balance",
-    "pages/mine/mine",
-    "pages/order/list/list",
-    "pages/order/detail/detail"
+    "pages/order/order",
+    "pages/user/user",
+    "pages/login/login"   
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -28,13 +25,13 @@
       {
         "selectedIconPath": "images/order_s.png",
         "iconPath": "images/order.png",
-        "pagePath": "pages/order/list/list",
+        "pagePath": "pages/order/order",
         "text": "订单"
       },
       {
         "selectedIconPath": "images/mine_s.png",
         "iconPath": "images/mine.png",
-        "pagePath": "pages/mine/mine",
+        "pagePath": "pages/user/user",
         "text": "我的"
       }
     ]
