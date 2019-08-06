@@ -3,6 +3,10 @@
     "pages/index/index",
     "pages/order/order",
     "pages/user/user",
+    "pages/collect/collect",
+    "pages/address/address",
+    "pages/about/about",
+    "pages/advice/advice",
     "pages/login/login"   
   ],
   "window": {

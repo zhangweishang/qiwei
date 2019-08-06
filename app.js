@@ -4,6 +4,7 @@ App({
     
   },
   globalData: {
+    urlPath: "http://www.zjprivate.xyz:8080",
     userInfo: null
   }
 })
