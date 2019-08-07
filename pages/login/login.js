@@ -20,6 +20,19 @@ Page({
     if(e.detail.userInfo){
       //用户按了允许授权按钮
       var that = this;
+      wx.login({
+        success(res) {
+          if (res.code) {
+            //发起网络请求
+            wx.request({
+              url: app.globalData.urlPath + '/onLogin',
+              data: {
+                code: res.code
+              },
+              method: "POST"
+            })
+          }
+        }
       //插入登录的用户的相关信息到数据库
       // wx.request({
       //   url: app.globalData.urlPath + 'user/add',
@@ -32,13 +45,13 @@ Page({
       //   },
       //   header: {
       //     'content-type': 'application/json'
-      //     },
-      //     success: function(res){
-      //       //从数据库获取用户信息
-      //       that.queryUserInfo();
-      //       console.log("插入小程序登录用户信息成功！");
-      //     }
-      // });
+      //   },
+      //   success: function(res){
+      //     //从数据库获取用户信息
+      //     that.queryUserInfo();
+      //     console.log("插入小程序登录用户信息成功！");
+      //   }
+      });
       //授权成功后，跳转到小程序首页
       wx.switchTab({
         url: '/pages/index/index',
