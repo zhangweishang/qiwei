@@ -1,5 +1,5 @@
 // pages/login/login.js
-// const app = getApp();
+const app = getApp();
 Page({
 
   /**
@@ -21,24 +21,24 @@ Page({
       //用户按了允许授权按钮
       var that = this;
       //插入登录的用户的相关信息到数据库
-      wx.request({
-        url: app.globalData.urlPath + 'user/add',
-        data: {
-          openid: getApp().globalData.openid,
-          nickName: e.detail.userInfo.nickName,
-          avatarUrl: e.detail.userInfo.avatarUrl,
-          province: e.detail.userInfo.province,
-          city: e.detail.userInfo.city
-        },
-        header: {
-          'content-type': 'application/json'
-          },
-          success: function(res){
-            //从数据库获取用户信息
-            that.queryUserInfo();
-            console.log("插入小程序登录用户信息成功！");
-          }
-      });
+      // wx.request({
+      //   url: app.globalData.urlPath + 'user/add',
+      //   data: {
+      //     openid: getApp().globalData.openid,
+      //     nickName: e.detail.userInfo.nickName,
+      //     avatarUrl: e.detail.userInfo.avatarUrl,
+      //     province: e.detail.userInfo.province,
+      //     city: e.detail.userInfo.city
+      //   },
+      //   header: {
+      //     'content-type': 'application/json'
+      //     },
+      //     success: function(res){
+      //       //从数据库获取用户信息
+      //       that.queryUserInfo();
+      //       console.log("插入小程序登录用户信息成功！");
+      //     }
+      // });
       //授权成功后，跳转到小程序首页
       wx.switchTab({
         url: '/pages/index/index',

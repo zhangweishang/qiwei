@@ -45,9 +45,9 @@ Page({
     //     })
     //   },
     // })
-    that.setData({ //转换完毕存储
-      userInfo: userInfo,
-    })
+    // that.setData({ //转换完毕存储
+    //   userInfo: userInfo,
+    // })
     wx.getSystemInfo({
       success: function (res) {
         var windowWidth = res.windowWidth * 0.5;
