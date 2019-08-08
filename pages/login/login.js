@@ -24,13 +24,13 @@ Page({
         success(res) {
           if (res.code) {
             //发起网络请求
-            wx.request({
-              url: app.globalData.urlPath + '/onLogin',
-              data: {
-                code: res.code
-              },
-              method: "POST"
-            })
+            // wx.request({
+            //   url: app.globalData.urlPath + '/onLogin',
+            //   data: {
+            //     code: res.code
+            //   },
+            //   method: "POST"
+            // })
           }
         }
       //插入登录的用户的相关信息到数据库

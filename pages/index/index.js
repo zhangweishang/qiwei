@@ -6,7 +6,21 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    "bnrUrl": [{
+      "url": "../../images/wx_logo.png"
+    }, {
+        "url": "../../images/wx_logo.png"
+    }, {
+        "url": "../../images/wx_logo.png"
+    }, {
+      "url": "../../images/wx_logo.png"
+    }],
+    indicatorDots: 'true',
+    autoplay: 'true',
+    circular: 'true',
+    indicatorActiveColor: "#FF9C35",
+    interval: 5000,
+    duration: 1000
   },
 
   /**
@@ -21,13 +35,13 @@ Page({
             success(res) {
               if (res.code) {
                 //发起网络请求
-                wx.request({
-                  url: app.globalData.urlPath + '/onLogin',
-                  data: {
-                    code: res.code
-                  },
-                  method: "POST"
-                })
+                // wx.request({
+                //   url: app.globalData.urlPath + '/onLogin',
+                //   data: {
+                //     code: res.code
+                //   },
+                //   method: "POST"
+                // })
               } 
             }
           })

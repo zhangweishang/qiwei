@@ -50,13 +50,19 @@
         <text class='icon-right'></text>
       </view>
     </view>
-    <view bindtap="openPage" class="item" data-url="/pages/advice/advice" formType="submit" hoverClass="none">
+    <!-- <view bindtap="openPage" class="item" data-url="/pages/advice/advice" formType="submit" hoverClass="none">
       <view class='wallet'><text class='icon-deit icon'></text><text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;</text><text>意见反馈</text></view>
       <view class="icon">
         <text class='icon-right'></text>
       </view>
-    </view>
-    <view class="item" bindtap='changeView'>
+    </view> -->
+    <button class="item" hoverClass="none" open-type="feedback" >
+      <view class='wallet'><text class='icon-deit icon'></text><text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;</text><text>意见反馈</text></view>
+      <view class="icon">
+        <text class='icon-right'></text>
+      </view>
+    </button>
+    <button class="item" bindtap='changeView'>
       <view class='wallet'>
         <text class='icon-settings icon'></text>
         <text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;</text>
@@ -65,7 +71,7 @@
       <view class="icon">
         <text class='icon-right'></text>
       </view>
-    </view>
+    </button>
     <button class="item" formType="submit" hoverClass="none" openType="contact">
       <view class='wallet'>
         <text class='icon-service icon'></text>

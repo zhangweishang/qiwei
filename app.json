@@ -6,7 +6,6 @@
     "pages/collect/collect",
     "pages/address/address",
     "pages/about/about",
-    "pages/advice/advice",
     "pages/login/login"   
   ],
   "window": {
