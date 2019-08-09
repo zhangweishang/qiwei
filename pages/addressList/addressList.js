@@ -1,23 +1,42 @@
-// pages/address/address.js
+// pages/addressList/addressList.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    id: '',
+    blankSpace: "\t\t",
+    line: "\n",
+    "list": [{
+      "address":"广州大学华软软件学院",
+      "door_card": "Q619",
+      "name": "zj",
+      "sex": "先生",
+      "phone": "123456",
+      "address_id":"1"
+    }, 
+    {
+        "address": "广州大学华软软件学院",
+        "door_card": "G139",
+        "name": "zj",
+        "sex": "女士",
+        "phone": "12345678",
+        "address_id": "2"
+    }]
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    var that = this
-    that.setData({
-      id: options.id
+    
+  },
+  //增加地址或编辑地址
+  addAddreOrEdit: function (e) {
+    wx.navigateTo({
+      url: '/pages/address/address?id=' + e.currentTarget.dataset.id,
     })
   },
-
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

@@ -6,12 +6,13 @@ Page({
    * 页面的初始数据
    */
   data: {
+    searchValue: '',
     "bnrUrl": [{
       "url": "../../images/wx_logo.png"
     }, {
-        "url": "../../images/wx_logo.png"
+      "url": "../../images/wx_logo.png"
     }, {
-        "url": "../../images/wx_logo.png"
+      "url": "../../images/wx_logo.png"
     }, {
       "url": "../../images/wx_logo.png"
     }],
@@ -53,8 +54,19 @@ Page({
         }
       }
     })
-  },
 
+    if (options && options.searchValue) {
+      this.setData({
+        searchValue: "搜索：" + options.searchValue
+      });
+    }
+  },
+  // 搜索入口  
+  wxSearchTab: function () {
+    wx.navigateTo({
+      url: '../search/search'
+    })
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

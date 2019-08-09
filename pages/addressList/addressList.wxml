@@ -1,0 +1,18 @@
+<!--pages/addressList/addressList.wxml-->
+<view class='container'>
+  <view class = "item" wx:for="{{list}}" wx:key="index">
+    <view class="left">
+      <text class='address'>{{item.address}}{{blankSpace}}{{item.door_card}}{{line}}</text>
+      <text class='name' >{{item.name}}</text>
+      <text class='sex' >{{item.sex}}</text>
+      <text class='tel'>{{item.phone}}</text>
+    </view>
+    <view class="right">
+      <image class='eidt' src="../../images/edit.png" mode="widthFix" data-index='{{index}}' bindtap="addAddreOrEdit" data-id='{{item.address_id}}'/>
+    </view>
+  </view>
+</view>
+<view class="add" bindtap="addAddreOrEdit" data-id='0'>
+  <image src="../../images/add.png" />
+  <view class="text">新增个人地址</view>
+</view>

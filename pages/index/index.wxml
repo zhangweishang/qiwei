@@ -1,4 +1,14 @@
 <!--pages/index/index.wxml-->
+<!-- 搜索栏 -->
+<view class="search-bar">
+  <view class="search-bar__form">
+    <view class="search-bar__box">
+      <icon class="icon-search_in-box" type="search" size="14"></icon>
+      <input type="text" class="search-bar__input"  disabled='true' placeholder="搜索" bindtap="wxSearchTab"/>
+    </view>
+  </view>
+</view>
+<view>{{searchValue}}</view>
 <!-- 轮播图 -->
 <swiper class='u-wrp-bnr' indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="{{circular}}" indicator-active-color="{{indicatorActiveColor}}">
   <block wx:for="{{bnrUrl}}" wx:key="index">

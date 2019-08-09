@@ -3,7 +3,7 @@
   <view class="header">
     <view class="user" hoverClass="none">
       <view class="user_box">
-        <view catchtap="previewImage" class="logo">
+        <view class="logo">
           <open-data type="userAvatarUrl" class="userimg"></open-data>
           <view class="cu-tag badge {{male==1?'icon-male bg-blue':'icon-female bg-pink'}}"></view>
         </view>
@@ -27,17 +27,17 @@
         <text>我的收藏</text>
       </view>
       <view class="icon">
-        <text class='icon-right'></text>
+        <image src="../../images/arrow.png" />
       </view>
     </view>
-    <view bindtap="openPage" class="item" data-url="/pages/address/address" formType="submit" hoverClass="none">
+    <view bindtap="openPage" class="item" data-url="/pages/addressList/addressList" formType="submit" hoverClass="none">
       <view class='wallet'>
         <text class='icon-info icon'></text>
         <text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;</text>
         <text>我的地址</text>
       </view>
       <view class="icon">
-        <text class='icon-right'></text>
+        <image src="../../images/arrow.png" />
       </view>
     </view>
     <view bindtap="openPage" class="item" data-url="/pages/about/about" formType="submit" hoverClass="none">
@@ -47,19 +47,13 @@
         <text>关于我们</text>
       </view>
       <view class="icon">
-        <text class='icon-right'></text>
+        <image src="../../images/arrow.png" />
       </view>
     </view>
-    <!-- <view bindtap="openPage" class="item" data-url="/pages/advice/advice" formType="submit" hoverClass="none">
-      <view class='wallet'><text class='icon-deit icon'></text><text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;</text><text>意见反馈</text></view>
-      <view class="icon">
-        <text class='icon-right'></text>
-      </view>
-    </view> -->
     <button class="item" hoverClass="none" open-type="feedback" >
       <view class='wallet'><text class='icon-deit icon'></text><text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;</text><text>意见反馈</text></view>
       <view class="icon">
-        <text class='icon-right'></text>
+        <image src="../../images/arrow.png" />
       </view>
     </button>
     <button class="item" bindtap='changeView'>
@@ -69,7 +63,7 @@
         <text>设置中心</text>
       </view>
       <view class="icon">
-        <text class='icon-right'></text>
+        <image src="../../images/arrow.png" />
       </view>
     </button>
     <button class="item" formType="submit" hoverClass="none" openType="contact">
@@ -79,7 +73,7 @@
         <text>联系客服</text>
       </view>
       <view class="icon">
-        <text class='icon-right'></text>
+        <image src="../../images/arrow.png" />
       </view>
     </button>
   </view>

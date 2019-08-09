@@ -1,0 +1,52 @@
+/* pages/addressList/addressList.wxss */
+.container{
+  width: 100%;
+}
+
+.item{
+  height: 100rpx;
+  border:  1rpx solid #EBEBEB;
+  padding: 25rpx;
+}
+
+.name{
+  color: #8A8A8A;
+  padding-right: 30rpx;
+}
+
+.sex{
+  color: #8A8A8A;
+  padding-right: 60rpx;
+}
+
+.tel{
+  color: #8A8A8A;
+}
+
+.left{
+  float: left;
+  width: 95%;
+}
+
+.right{
+  float: right;
+  margin-top: 30rpx;
+  width: 5%;
+}
+
+.add{
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  line-height: 100rpx;
+  width: 100%;
+  bottom: 0;
+  border-top: 1rpx solid #EBEBEB; 
+}
+
+image{
+  width: 40rpx;
+  height: 40rpx;
+}

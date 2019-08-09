@@ -4,8 +4,10 @@
     "pages/order/order",
     "pages/user/user",
     "pages/collect/collect",
+    "pages/addressList/addressList",
     "pages/address/address",
     "pages/about/about",
+    "pages/search/search",
     "pages/login/login"   
   ],
   "window": {

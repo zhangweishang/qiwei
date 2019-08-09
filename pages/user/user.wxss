@@ -81,12 +81,6 @@ page {
   height: 31rpx;
 }
 
-.vip_expires {
-  margin-top: 12rpx;
-  font-size: 27rpx;
-  color: #fff;
-}
-
 .info {
   display: flex;
   margin-top: 62rpx;
@@ -157,7 +151,6 @@ page {
   padding: 30rpx 0;
 }
 
-
 .nav button.item {
   margin: 0;
   line-height: inherit;
@@ -200,11 +193,4 @@ page {
   margin-left: 20rpx;
   width: 40rpx;
   height: 40rpx;
-}
-.joinVip{
-  font-size:27rpx;
-  line-height:27rpx;
-  display:inline-block;
-  color:#dab643;
-  text-decoration:underline;
 }
