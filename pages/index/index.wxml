@@ -17,3 +17,28 @@
     </swiper-item>
   </block>
 </swiper>
+<!-- 猜你喜欢 -->
+<view class="title">
+  <text>点菜</text>
+</view>
+<view  class="indexDetails" wx:for="{{list}}" wx:key="index">
+  <view class="indexListDetails">
+    <view class="productCover">
+      <image src="{{item.cover}}" background-size="cover"></image>
+    </view>
+    <view class="productInfo">
+      <view class="productTitle">{{item.title}}</view>
+      <text class="productDesc">{{item.desc}}</text>
+      <view class="flex">
+        <view class="productmonthSales">月售{{item.month_sales}}</view>
+        <view class="productLike">赞{{item.like}}</view>
+      </view>
+      <view class="productSellPrice">￥{{item.sell_price}}</view>
+    </view>
+    <view class="choice">
+      <image src="../../images/reduce.png" bindtap="reduce"/>
+      <text wx:if="{{list.number > 0}}" data-id="{{list.id}}">{{number}}</text>
+      <image src="../../images/add.png" bindtap="add"/>
+    </view>
+  </view>
+</view>
