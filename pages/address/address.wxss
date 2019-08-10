@@ -1,1 +1,66 @@
 /* pages/address/address.wxss */
+page{
+  margin: 0 30rpx;
+}
+.section{
+  border-bottom: 1rpx solid #EBEBEB;
+  display:flex;
+  padding: 27rpx 0;
+}
+
+label{
+  width: 200rpx;
+}
+
+input{
+  width: 550rpx;
+}
+
+image{
+  margin-top: 15rpx;
+  width: 30rpx;
+  height: 30rpx;
+}
+
+button{
+  width: 700rpx;
+  margin: 30rpx 0;
+}
+
+.save{
+  border: 1rpx solid #FF9C35;
+  background: #FF9C35;
+  text-emphasis-color: #000;
+}
+
+.delete{
+  border: 1rpx solid #FF9C35;
+  background: #fff;
+  text-emphasis-color: #FF9C35;
+}
+
+.cityheader {
+  position: absolute;
+  top:0px;
+  width: 95%;
+  z-index: 4;
+}
+
+.city-cancel {
+  float: left;
+  margin: 20rpx;
+  color: #818181;
+}
+
+.city-true {
+  float: right;
+  margin: 20rpx;
+  color: #2FB42E
+}
+
+.picker {
+  background-color: #fff;
+  border-bottom: 1px #d9d9d9 solid;
+  border-top: 1px #d9d9d9 solid;
+  padding: 20rpx;
+}
