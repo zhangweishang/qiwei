@@ -25,7 +25,7 @@ Page({
           if (res.code) {
             //发起网络请求
             // wx.request({
-            //   url: app.globalData.urlPath + '/onLogin',
+            //   url: app.globalData.urlPath + '/springboot/user/onLogin/onLogin',
             //   data: {
             //     code: res.code
             //   },
@@ -33,24 +33,6 @@ Page({
             // })
           }
         }
-      //插入登录的用户的相关信息到数据库
-      // wx.request({
-      //   url: app.globalData.urlPath + 'user/add',
-      //   data: {
-      //     openid: getApp().globalData.openid,
-      //     nickName: e.detail.userInfo.nickName,
-      //     avatarUrl: e.detail.userInfo.avatarUrl,
-      //     province: e.detail.userInfo.province,
-      //     city: e.detail.userInfo.city
-      //   },
-      //   header: {
-      //     'content-type': 'application/json'
-      //   },
-      //   success: function(res){
-      //     //从数据库获取用户信息
-      //     that.queryUserInfo();
-      //     console.log("插入小程序登录用户信息成功！");
-      //   }
       });
       //授权成功后，跳转到小程序首页
       wx.switchTab({

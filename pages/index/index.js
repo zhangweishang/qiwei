@@ -65,9 +65,10 @@ Page({
           wx.login({
             success(res) {
               if (res.code) {
+                console.log(res.code);
                 //发起网络请求
                 // wx.request({
-                //   url: app.globalData.urlPath + '/onLogin',
+                //   url: app.globalData.urlPath + '/springboot/user/onLogin',
                 //   data: {
                 //     code: res.code
                 //   },
